@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600&family=Texturina:wght@600;700;800;900&display=swap');
+
+*, *::before, *::after {
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+:root {
+	--first-color: #20bf6b;
+	--first-color-alt: #26de81;
+	--title-color: #2d3436;
+	--text-color: #bdc3c7;
+	--body-color: #ecf0f1;
+	--title-font: 'Texturina', serif;
+	--text-font: 'Advent Pro', sans-serif;
+	--z-fixed: 1000;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	trasition: all .3s ease-in-out;
+}
+
+header#header {
+    width: 100%;
+    min-height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.sticky {
+	position: fixed;
+	z-index: var(--z-fixed);
+	width: 100%;
+	box-shadow: 0px 3px 9px -2px #b0b1b09c;
+}
+
+nav.navber {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navber .logo {
+    text-decoration: none;
+    font-size: 32px;
+    color: var(--title-color);
+    font-weight: 900;
+    font-family: var(--title-font);
+}
+
+.navber .logo:hover {
+	color: var(--first-color);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-item .nav-link {
+	font-size: 18px;
+	font-family: var(--title-font);
+	font-weight: 600;
+	color: var(--title-color);
+	position: relative;
+	padding: 5px 3px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	color: var(--first-color);
+}
+
+.navbar-nav .nav-item .nav-link::before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: var(--title-color);
+	opacity:0;
+	transition: all .5s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: var(--title-color);
+	opacity:0;
+	transition: all .3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+	top: 0;
+	opacity: 1;
+}
+.navbar-nav .nav-item .nav-link:hover::after {
+	bottom: 0;
+	opacity: 1;
+}
+
+/* BANNER  */
+
+.image {
+    height: 100vh;
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+.img-content {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.img-content h2 {
+    font-size: 60px;
+    color: var(--first-color);
+}
+
+.hero-banner {
+    position: relative;
+}
+
+
+.container > p {
+	padding: 2rem 0;
+	margin-top: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
